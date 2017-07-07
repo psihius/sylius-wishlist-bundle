@@ -35,7 +35,7 @@
                      target-entity="Webburza\Sylius\WishlistBundle\Model\WishlistItemInterface"
                      mapped-by="wishlist">
             <order-by>
-                <order-by-field name="name" direction="ASC" />
+                <order-by-field name="created_at" direction="DESC" />
             </order-by>
         </one-to-many>
 
