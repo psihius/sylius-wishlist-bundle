@@ -38,7 +38,7 @@ class WishlistController extends FOSRestController
         $wishlists = $this->get('webburza_wishlist.repository.wishlist')->findBy([
             'user' => $this->getUser()
         ], [
-            'createdAt' => 'asc'
+            'createdAt' => 'desc'
         ]);
 
         $view = View::create([
