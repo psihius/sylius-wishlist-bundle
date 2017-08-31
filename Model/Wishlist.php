@@ -146,7 +146,7 @@ class Wishlist implements WishlistInterface
     /**
      * @return ShopUserInterface
      */
-    public function getUser()
+    public function getUser(): ?UserInterface
     {
         return $this->user;
     }
@@ -156,7 +156,7 @@ class Wishlist implements WishlistInterface
      *
      * @return Wishlist
      */
-    public function setUser(UserInterface $user = null)
+    public function setUser(?UserInterface $user)
     {
         $this->user = $user;
 
@@ -200,7 +200,7 @@ class Wishlist implements WishlistInterface
     public function contains(ProductVariantInterface $productVariant)
     {
         foreach ($this->items as $wishlistItem) {
-            if ($wishlistItem->getProductVariant() == $productVariant) {
+            if ($wishlistItem->getProductVariant() === $productVariant) {
                 return true;
             }
         }

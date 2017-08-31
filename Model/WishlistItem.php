@@ -4,9 +4,6 @@ namespace Webburza\Sylius\WishlistBundle\Model;
 
 use Sylius\Component\Resource\Model\TimestampableTrait;
 use Sylius\Component\Core\Model\ProductVariantInterface;
-use Symfony\Component\Validator\Constraints as Assert;
-use Webburza\Sylius\WishlistBundle\Model\WishlistInterface;
-use Webburza\Sylius\WishlistBundle\Model\WishlistItemInterface;
 
 class WishlistItem implements WishlistItemInterface
 {
