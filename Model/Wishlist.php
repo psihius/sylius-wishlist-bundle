@@ -156,7 +156,7 @@ class Wishlist implements WishlistInterface
      *
      * @return Wishlist
      */
-    public function setUser(?UserInterface $user)
+    public function setUser(?UserInterface $user = NULL)
     {
         $this->user = $user;
 
